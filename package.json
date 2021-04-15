@@ -1,0 +1,41 @@
+{
+  "name": "vab-icons",
+  "author": "chuzhixin <1204505056@qq.com>",
+  "description": "vab-icons基于Remix Icon封装",
+  "version": "0.0.19",
+  "main": "./lib/vab-icons.umd.min.js",
+  "homepage": "https://chu1204505056.gitee.io/admin-pro",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "build:lib": "vue-cli-service build --dest lib --target lib src/components/VabIcon.vue",
+    "lint": "vue-cli-service lint --fix",
+    "lint:style": "stylelint **/*.{vue,scss} --fix",
+    "clear": "npm cache clean -f&&rimraf node_modules&&npm i --registry=https://registry.npm.taobao.org",
+    "use:npm": "nrm use npm",
+    "use:taobao": "nrm use taobao",
+    "update": "ncu -u --registry https://registry.npm.taobao.org&&npm i --registry=https://registry.npm.taobao.org"
+  },
+  "dependencies": {
+    "core-js": "^3.9.1",
+    "remixicon": "^2.5.0",
+    "vue": "^2.6.12"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.5.11",
+    "@vue/cli-plugin-eslint": "^4.5.11",
+    "@vue/cli-service": "^4.5.11",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.21.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-vue": "^7.6.0",
+    "prettier": "^2.2.1",
+    "sass": "^1.32.8",
+    "sass-loader": "^10.1.1",
+    "stylelint": "^13.11.0",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-recess-order": "^2.3.0",
+    "vue-template-compiler": "^2.6.12"
+  }
+}
